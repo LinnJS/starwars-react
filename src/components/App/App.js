@@ -1,10 +1,23 @@
-import React, {Component} from 'react';
-import './App.css';
+import React, {Component} from 'react'
+import './App.css'
 
-class App extends Component {
   // PROPS AND STATE
   // Set props and state below.
   // Set state for vehicles (empty array), value (empty string), pilot (empty) string.
+  class App extends Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      vehicles: [],
+      value: '',
+      pilot: ''
+    }
+
+    this.handleSubmit = this.handleSubmit.bind(this)
+    this.handleNameChange = this.handleNameChange.bind(this)
+
+  }
 
   // FORM: HANDLE INPUT CHANGES
   // handleNameChange below:
@@ -42,7 +55,7 @@ class App extends Component {
          Form will also need a header in which you will pass the state of the form upon submit.
          */}
     </div>
-  );
+  )
 }
 }
 
