@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './App.css'
+import Header from '../Header/Header.js'
 
 class App extends Component {
   constructor(props) {
@@ -39,6 +40,7 @@ class App extends Component {
     */
     return (
       <div className="App container">
+        <Header />
         {/*
             The App component needs the following:
              jumbotron section, form section, vehicle cards section.
