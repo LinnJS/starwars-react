@@ -5,7 +5,7 @@ import logo from '../assets/logo.svg'
 class Header extends Component {
   render() {
     return (
-      <div className='jumbotron'>
+      <div className='jumbotron header'>
         <img src={logo} alt="Star Wars"/>
         <h2>Vehicle Encyclopedia</h2>
       </div>
