@@ -22,8 +22,8 @@ class Form extends Component {
 
           <h3>What's your name pilot?</h3>
           <form action="">
-          <input name="name" onChange={this.handleFormSubmit} type="text" value={this.state.name}/>
-          <input label="Submit" className="btn btn-primary" type="submit" value="Submit" />
+            <input name="name" onChange={this.handleFormSubmit} type="text" value={this.state.name}/>
+            <input label="Submit" className="btn btn-primary" type="submit" value="Submit"/>
           </form>
         </div>
       </div>
@@ -31,4 +31,4 @@ class Form extends Component {
   }
 }
 
-  export default Form
+export default Form

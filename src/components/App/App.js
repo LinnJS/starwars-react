@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import './App.css'
 import Header from '../Header/Header.js'
 import Form from '../Form/Form.js'
+import Vehicles from '../Vehicles/Vehicles.js'
 
 class App extends Component {
   constructor(props) {
@@ -35,19 +36,11 @@ class App extends Component {
   }
 
   render() {
-    /*
-    Store vehicles state in a variable.
-    Map over this variable to access the values needed to render.
-    */
     return (
       <div className="App container">
         <Header />
         <Form />
-        {/*
-            The App component needs the following:
-             jumbotron section, form section, vehicle cards section.
-             Form will  also need a header in which you will pass the state of the form upon submit.
-             */}
+        <Vehicles />
       </div>
     )
   }

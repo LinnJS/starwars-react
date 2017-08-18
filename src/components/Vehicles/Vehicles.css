@@ -1,0 +1,19 @@
+.details {
+  border: none;
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.card {
+  margin: 20px;
+  width: 15em;
+  height: 37em;
+}
+
+.specsContainer {
+  border: none;
+  padding: 15px;
+}
