@@ -1,8 +1,11 @@
-import React, {Component, protoTypes} from 'react'
+import React, { Component, protoTypes } from 'react'
 import './Form.css'
 
-class Form extends Component {
+import rebel from '../assets/rebel.png'
+import empire from '../assets/empire.png'
+import force from '../assets/force.png'
 
+class Form extends Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -12,20 +15,15 @@ class Form extends Component {
   }
 
   handleFormSubmit(event) {
-    this.setState({name: event.target.value})
+    this.setState({ name: event.target.value })
   }
 
   render() {
     return (
-      <div className='jumbotron'>
-        <div className='form'>
-
-          <h3>What's your name pilot?</h3>
-          <form action="">
-            <input name="name" onChange={this.handleFormSubmit} type="text" value={this.state.name}/>
-            <input label="Submit" className="btn btn-primary" type="submit" value="Submit"/>
-          </form>
-        </div>
+      <div className="jumbotron icon">
+        <img src={rebel} alt="Rebel Icon" />
+        <h2>May the Force be with you</h2>
+        <img src={empire} alt="Rebel Icon" />
       </div>
     )
   }
