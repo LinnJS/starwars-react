@@ -23,7 +23,7 @@ class Form extends Component {
       <div className="jumbotron icon">
         <img src={rebel} alt="Rebel Icon" />
         <h2>May the Force be with you</h2>
-        <img src={empire} alt="Rebel Icon" />
+        <img src={empireß} alt="Rebel Icon" />
       </div>
     )
   }
