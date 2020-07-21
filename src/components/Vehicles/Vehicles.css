@@ -5,7 +5,6 @@
 .cardContainer {
   display: flex;
   flex-wrap: wrap;
-
 }
 .card {
   margin: 20px;

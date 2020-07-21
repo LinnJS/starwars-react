@@ -1,23 +1,23 @@
-import React, { Component } from 'react'
-import './Vehicles.css'
+import React, { Component } from "react";
+import "./Vehicles.css";
 
 class Vehicles extends Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
-      vehicles: []
-    }
+      vehicles: [],
+    };
   }
   componentDidMount() {
-    fetch('https://swapi.co/api/vehicles/')
-      .then(res => res.json())
+    fetch("https://swapi.co/api/vehicles/")
+      .then((res) => res.json())
       .then(({ results }) => {
-        this.setState({ vehicles: results })
-      })
+        this.setState({ vehicles: results });
+      });
   }
 
   render() {
-    let vehicles = this.state.vehicles.map(vehicle => {
+    let vehicles = this.state.vehicles.map((vehicle) => {
       return (
         <div className="col-sm-4">
           <div className="card">
@@ -39,10 +39,10 @@ class Vehicles extends Component {
             </ul>
           </div>
         </div>
-      )
-    })
-    return <div className="cardContainer">{vehicles}</div>
+      );
+    });
+    return <div className="cardContainer">{vehicles}</div>;
   }
 }
 
-export default Vehicles
+export default Vehicles;
